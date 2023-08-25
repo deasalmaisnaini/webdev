@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.color-box {
+  width: 90%; /* Menggunakan persentase untuk ukuran kotak besar */
+  max-width: 800px; /* Maksimum lebar kotak besar */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Membagi kotak menjadi 6 kolom */
+  grid-template-rows: repeat(6, 1fr); /* Membagi kotak menjadi 6 baris */
+  border: 1px solid black;
+}
+
+.color {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black; /* Menambahkan border hitam pada setiap kotak */
+}
+
+.color p {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Kelas untuk mengubah warna teks menjadi hitam */
+.black-text p {
+  color: black;
+}
+
+/* Kelas untuk mengubah warna teks menjadi putih */
+.white-text p {
+  color: white;
+}
+
+.grid1 {
+  grid-column: 1 / span 2; /* Kotak pertama, memenuhi kolom 1 dan 2 */
+}
+
+.grid2 {
+  grid-column: 3 / span 2;
+}
+
+.color-1 {
+  background-color: blue;
+  grid-row: 1 / span 3;
+}
+
+.color-2 {
+  background-color: yellow;
+  grid-row: 4;
+}
+
+.color-3 {
+  background-color: red;
+  grid-row: 5;
+}
+
+.color-4 {
+  background-color: greenyellow;
+  grid-row: 6;
+}
+
+.color-5 {
+  background-color: black;
+  grid-column: 3 / span 4;
+  grid-row: 1;
+}
+
+.color-6 {
+  background-color: brown;
+  grid-row: 2 / span 2;
+}
+
+.color-7 {
+  background-color: purple;
+  grid-row: 4 / span 2;
+}
+
+.color-8 {
+  background-color: orange;
+  grid-row: 6;
+}
+
+.color-9 {
+  background-color: white;
+  grid-column: 5;
+  grid-row: 2 / span 3;
+}
+
+.color-10 {
+  background-color: gainsboro;
+  grid-column: 5 / span 2;
+  grid-row: 5 / span 2;
+}
+
+.color-11 {
+  background-color: pink;
+  grid-column: 6;
+  grid-row: 2;
+}
+
+.color-12 {
+  background-color: skyblue;
+  grid-column: 6;
+  grid-row: 3 / span 2;
+}

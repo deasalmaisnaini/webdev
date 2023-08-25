@@ -1,0 +1,163 @@
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+.bg-light-gray {
+  background: #f3f4f6;
+}
+
+.navbar .nav-link {
+  white-space: nowrap;
+  margin-right: 15px;
+  color: #949eb2 !important;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+@media (max-width: 828px) {
+  .logo-container {
+    flex-direction: column;
+  }
+
+  .logo {
+    padding-bottom: 12px !important;
+  }
+
+  .topnav {
+    width: 100%;
+    order: 2;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .h3 {
+    font-size: 1.625rem !important;
+  }
+
+  .h2 {
+    font-size: 14px !important;
+  }
+
+  .input-group {
+    flex-grow: 1;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 570px) {
+  .navbar-nav {
+    display: flex;
+    flex-wrap: wrap !important; /* Mengatur item-item menu untuk pindah baris secara bertahap */
+  }
+}
+
+@media (min-width: 640px) {
+  .topnav .hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .topnav {
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .navbar .nav-link.view-all-lessons {
+    display: none;
+  }
+}
+
+.topnav .red-text {
+  color: crimson !important;
+}
+
+h1 {
+  font-family: "source-sans-pro";
+}
+
+body,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: Source Sans Pro, sans-serif;
+}
+
+p {
+  color: #778298 !important;
+  line-height: 1.5 !important;
+}
+
+.h3 {
+  font-size: 4.4rem;
+}
+
+.text-danger {
+  font-weight: 600;
+}
+
+.h2 {
+  font-size: 20px;
+}
+
+.input-group {
+  width: 45%;
+  height: auto;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+input,
+#submit {
+  font-size: 1.125rem;
+  padding: 14px 18px !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header .form-control:focus {
+  box-shadow: 0 0 0 0.11rem rgba(255, 0, 0, 0.25);
+  border-color: #ff0000;
+}
+
+.form-control,
+#submit {
+  border: none;
+  border-bottom: 2px solid lightslategray;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+#submit {
+  background-color: #2ecc40;
+  border: none;
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.h4 {
+  font-size: 1.5rem;
+  font-weight: normal !important;
+}
+
+.h5 {
+  font-size: 1.125rem;
+}
+
+p a:hover {
+  text-decoration: underline !important;
+}
+
+.form-footer {
+  width: 100% !important;
+}
