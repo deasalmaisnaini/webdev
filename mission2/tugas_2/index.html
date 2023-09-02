@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/game.png" />
+    <title>Flappy Bird Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <canvas id="board"></canvas>
+    <div id = "error-message" class = "error_network">
+        <h1 class = "header">No Internet</h1>
+        <p class = "try">Try: </p>
+        <ul>
+            <li>Checking the network cables, modem, and routers</li>
+            <li>Reconnecting to Wi-Fi</li>
+            <li>Running Windows Network Diagnostics</li>
+        </ul>
+        <p id = "disconnect">ERR_INTERNET_DISCONNECTED </p>
+    </div>
+    <div id="message" class="message">
+      Click Enter To Start Game
+      <p>Arrow Up or space to fly</p>
+    </div>
+    <div id="game-over-popup" class="popup">
+      <h2>Game Over</h2>
+      <p>Your Score: <span id="final-score">0</span></p>
+      <button id="play-again-button">Play Again</button>
+    </div>
+  </body>
+</html>
