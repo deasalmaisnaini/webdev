@@ -107,6 +107,8 @@ window.onload = function () {
     playAgainButton.addEventListener("click", function () {
       // Hide the game over popup
       gameOverPopup.style.display = "none";
+      isScrollLocked = false;
+      toggleScrollLock();
 
       // Reload the page
       location.reload();
@@ -268,8 +270,6 @@ function endGame() {
 
   // Stop the game loop
   gameOver = true;
-  isScrollLocked = false;
-  toggleScrollLock();
   sound_die.play();
   sound_gameover.play();
 }
